@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph Tube</title>
+
+    <!-- DaisyUI and Tailwinds -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        myPrimary: '#FF1F3D',
+                        myBg: '#25252526'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-center">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="bg-myBg rounded-lg"><a>Short by View</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-myPrimary text-white">Blog</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main class="container mx-auto">
+        <!-- Category Section-->
+        <section id="category-container" class="category-contaienr-style">
+        </section>
+
+        <section id="content-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
+
+        </section>
+        <!-- <img src="./assets/blue-mark.png" alt=""> -->
+        
+    </main>
+    <script src="./scripts/utility.js"></script>
+</body>
+
+</html>
